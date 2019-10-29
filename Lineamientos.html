@@ -1,0 +1,1058 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lineamientos para el área de TI</title>
+  <link rel="stylesheet" type="text/css" href="Estilo.css">
+
+
+</head>
+
+<body>
+
+  <div class="Cabezote">
+    <img style="vertical-align:middle" src="Imagenes/LogoTQ.png" alt="">
+    <a href="">Área de TI</a>
+
+  </div>
+
+
+  <h1>Lineamientos para el área</h1>
+
+
+  <div class="filtrosP">
+
+
+    <h2>Filtrar por:</h2>
+
+    <div id="myBtnContainer">
+
+      <button class="btn active" onclick="primerFiltro('Todo')" style="background-image:url('Imagenes/Todo.png')">
+        Mostrar todo</button>
+      <button class="btn" onclick="primerFiltro('CelularesTabletas')"
+        style="background-image:url('Imagenes/Celular.png')">
+        Celulares y tabletas</button>
+      <button class="btn" onclick="primerFiltro('Computadores')"
+        style="background-image:url('Imagenes/Computadores.png')"> Computadores</button>
+      <button class="btn" style="background-image:url('Imagenes/Desarrollo.png')" onclick="primerFiltro('Desarrollo')">
+        Desarrollo</button>
+      <button class="btn" style="background-image:url('Imagenes/Infraestructura.png')"
+        onclick="primerFiltro('Infraestructura')"> Infraestructura</button>
+      <button class="btn" style="background-image:url('Imagenes/Multifuncionales.png')"
+        onclick="primerFiltro('Multifuncionales')"> Multifuncionales</button>
+      <button class="btn" style="background-image:url('Imagenes/Seguridad.png')" onclick="primerFiltro('Seguridad')">
+        Seguridad</button>
+      <button class="btn" style="background-image:url('Imagenes/Proyeccion.png')"
+        onclick="primerFiltro('VideoProyeccion')"> Video Proyección</button>
+
+    </div>
+
+  </div>
+
+
+  <div id="container">
+
+    <!-- Boton fake -->
+    <button class="filterDiv fake seleccionado">hardware</button>
+
+    <!-- CELULARES Y TABLETAS -->
+
+    <div class="CelularesTabletas">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('adminCel')">Administradores</button>
+      <button class="filterDiv" onclick="segundoFiltro('hardwareCel')">Hardware</button>
+      <button class="filterDiv" onclick="segundoFiltro('servicioCel')">Servicios</button>
+      <button class="filterDiv" onclick="segundoFiltro('SistemasOperativosCel')">Sistemas
+        operativos</button>
+    </div>
+
+    <!-- COMPUTADORES -->
+
+    <div class="computadores">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('hardwareCom')">Hardware</button>
+      <button class="filterDiv" onclick="segundoFiltro('navegadoresCom')">Navegadores</button>
+      <button class="filterDiv" onclick="segundoFiltro('seguridadCom')">Seguridad</button>
+      <button class="filterDiv" onclick="segundoFiltro('sistemasOperativosCom')">Sistemas
+        operativos</button>
+      <button class="filterDiv " onclick="segundoFiltro('suitOfimaticaCom')">Suite de Ofimática</button>
+    </div>
+
+    <!-- DESARROLLO -->
+
+    <div class="desarrollo" style="text-align: center;">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('web')">WEB</button>
+      <button class="filterDiv" onclick="segundoFiltro('capaMedia')">Capa Media</button>
+      <button class="filterDiv" onclick="segundoFiltro('proceDatos')">Procesamiento de Datos</button>
+      <button class="filterDiv" onclick="segundoFiltro('visualizacion')">Visualización</button>
+      <button class="filterDiv" onclick="segundoFiltro('flujoProcesos')">Flujo de Procesos</button>
+      <button class="filterDiv" onclick="segundoFiltro('webApi')">WEB API</button>
+      <button class="filterDiv" onclick="segundoFiltro('liberacion')">Liberación</button>
+      <br>
+      <button class="filterDiv" onclick="segundoFiltro('integraciones')">Integraciones</button>
+      <button class="filterDiv" onclick="segundoFiltro('movilidad')">Movilidad</button>
+      <button class="filterDiv" onclick="segundoFiltro('automatizaciones')">Automatizaciones</button>
+      <button class="filterDiv" onclick="segundoFiltro('analitica')">Analítica</button>
+      <button class="filterDiv" onclick="segundoFiltro('cognitiva')">Cognitiva</button>
+
+    </div>
+
+    <!-- INFRAESTRUCTURA -->
+
+    <div class="infraestructura">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('solucionesInfra')">Soluciones</button>
+      <button class="filterDiv" onclick="segundoFiltro('basesDatosInfra')">Bases de datos</button>
+      <button class="filterDiv" onclick="segundoFiltro('sistemasOperativosInfra')">Sistemas operativos</button>
+      <button class="filterDiv" onclick="segundoFiltro('VirtualizacionInfra')">Virtualización</button>
+      <button class="filterDiv" onclick="segundoFiltro('redInalambrica')">Red Inalámbrica</button>
+    </div>
+
+    <!-- MULTIFUNCIONALES -->
+
+    <div class="multifuncionales">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('hardwareMultifuncionales')">Hardware</button>
+      <button class="filterDiv" onclick="segundoFiltro('soporteMultifuncionales')">Soporte</button>
+    </div>
+
+    <!-- SEGURIDAD -->
+
+    <div class="seguridad" style="text-align: center;">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('accesosSeguridad')">Accesos</button>
+      <button class="filterDiv" onclick="segundoFiltro('actualizacionesSeguridad')">Actualizaciones</button>
+      <button class="filterDiv" onclick="segundoFiltro('basesDatosSeguridad')">Bases de datos</button>
+      <button class="filterDiv" onclick="segundoFiltro('conexionesSeguridad')">Conexiones</button>
+      <button class="filterDiv" onclick="segundoFiltro('correoSeguridad')">Correo</button>
+      <button class="filterDiv" onclick="segundoFiltro('datosPersonalesSeguridad')">Datos personales</button>
+      <button class="filterDiv" onclick="segundoFiltro('dispositivosSeguridad')">Dispositivos</button>
+      <br>
+      <button class="filterDiv" onclick="segundoFiltro('drpSeguridad')">DRP</button>
+      <button class="filterDiv" onclick="segundoFiltro('eolSeguridad')">EOL</button>
+      <button class="filterDiv" onclick="segundoFiltro('perimetralSeguridad')">Perimetral</button>
+      <button class="filterDiv" onclick="segundoFiltro('soporteRemotoSeguridad')">Soporte remoto</button>
+      <button class="filterDiv" onclick="segundoFiltro('transaccionalesSeguridad')">Transaccionales</button>
+      <button class="filterDiv" onclick="segundoFiltro('versionamientoSeguridad')">Versionamiento</button>
+      <button class="filterDiv" onclick="segundoFiltro('webSeguridad')">WEB</button>
+    </div>
+
+    <!-- VIDEO PROYECCIÓN -->
+
+    <div class="videoProyeccion">
+      <h3>Temas</h3>
+      <button class="filterDiv" onclick="segundoFiltro('hardwareVideoProyeccion')">Hardware</button>
+    </div>
+
+  </div>
+
+  <!-- CELULARES Y TABLETAS -->
+
+  <div id="lineamientosCelulares">
+
+    <h4>Celulares y tabletas</h4>
+
+    <!-- ADMINISTRADORES CELULARES Y TABLETAS -->
+
+
+    <div id="administradoresCel">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Administradores</strong> <br><br> Todos los dispositivos
+          móviles entregados por TQ como herramienta de trabajo contarán
+          con un software de control MDM.</p>
+        <p class="lineamientoDer">• Garantizar la administración de los dispositivos móviles <br> • Aplicar políticas de
+          seguridad sobre los dispositivos móviles <br> • Brindar el soporte necesario para el correcto funcionamiento
+          de las aplicaciones corporativas</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"><strong class="etiqueta">Administradores</strong> <br><br> El software para
+          administración, gestión y control de los dispositivos móviles
+          asignados como herramienta de trabajo será el MDM de Aranda.</p>
+        <p class="lineamientoDer">• Garantizar la administración de los dispositivos móviles <br> • Aplicar políticas de
+          seguridad sobre los dispositivos móviles <br> • Brindar el soporte necesario para el correcto funcionamiento
+          de las aplicaciones corporativas</p>
+      </div>
+
+    </div>
+
+    <!-- HARDWARE CELULARES Y TABLETAS -->
+
+
+    <div id="hardwareCel">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br> Las marcas de celulares que se
+          manejan para los distintos servicios de movilidad son:<br>• Samsung<br>• Huawei<br>• Apple</p>
+        <p class="lineamientoDer">• Estandarizar el manejo de las marcas <br>• Gestión del conocimiento en los técnicos
+          de soporte <br>• Estandarización en los procesos de asignación y configuración de los dispositivos</p>
+      </div>
+
+    </div>
+
+    <!-- SERVICIOS CELULARES Y TABLETAS -->
+
+
+    <div id="servicioCel">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Servicio</strong> <br><br> Todos los dispositivos móviles
+          para las fuerzas en campo (RV, visita médica, agro veterinaria, etc.) se contratarán en modalidad de servicio
+          y se renovarán cada 18 meses.</p>
+        <p class="lineamientoDer"> • Garantizar la renovación de los equipos cuando cumplan su ciclo de vida <br>• Poder
+          suplir las necesidades de la demanda del servicio <br>• Estandarizar el manejo de las marcas</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Servicio</strong> <br><br> Todos los celulares que entrega
+          la corporación como beneficio a través del beneficio de auxilio (Planes split billing) su renovación será cada
+          24 meses de acuerdo con la política definida por compensación laboral.</p>
+        <p class="lineamientoDer"> • Brindar un auxilio para garantizar la renovación del dispositivo cumplido su ciclo
+          de vida</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Servicio</strong> <br><br> El proveedor del servicio de voz
+          y datos será el que mejor cobertura tenga en la zona donde se desempeña las fuerzas en campo.</p>
+        <p class="lineamientoDer"> • Garantizar el correcto funcionamiento del dispositivo <br> • Garantizar que las
+          fuerzas en campo puedan utilizar las aplicaciones y herramientas asignadas</p>
+      </div>
+
+    </div>
+
+    <!-- SISTEMAS OPERATIVOS CELULARES Y TABLETAS -->
+
+    <div id="SistemasOperativosCel">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Sistemas Operativos</strong> <br><br> Los sistemas
+          operativos de los dispositivos móviles deben estar actualizados a su última versión oficial soportada por el
+          modelo del dispositivos tanto en Android como en iOs.</p>
+        <p class="lineamientoDer"> • Garantizar el correcto funcionamiento del dispositivo <br>• Garantizar que se
+          encuentre actualizado con los últimos parches de seguridad <br>• Garantizar la compatibilidad con las
+          aplicaciones del mercado</p>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- COMPUTADORES -->
+
+  <div id="lineamientosComputadores">
+    <h4>Computadores</h4>
+
+    <!-- HARDWARE COMPUTADORES -->
+
+    <div id="hardwareCom">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware </strong> <br><br> Las marcas seleccionadas para
+          cubrir las necesidades de herramientas de puesto de
+          trabajo son: <br> · HP: Computadores de escritorio y portátiles Windows. <br> · Apple: Computadores de
+          escritorio y portátiles MAC.</p>
+        <p class="lineamientoDer">• Estandarizar el manejo de una sola marca <br> • Centralizar el soporte en un solo
+          fabricante (Garantías) <br> • Gestión del conocimiento en los técnicos de soporte <br> • Estandarización en
+          los procesos de preparación e instalación de los computadores</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br> Todos los equipos de computo
+          serán adquiridos en modalidad de renting.</p>
+        <p class="lineamientoDer">• Garantizar la renovación de los equipos cuando cumplan su ciclo de vida <br> •
+          Poder suplir las necesidades de la demanda del servicio</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br> Los computadores de escritorio se
+          renovarán cada 5 años, mientras que los computadores portátiles serán cada 3 años.</p>
+        <p class="lineamientoDer"> • Garantizar el correcto funcionamiento de los equipos de cómputo <br> • Los usuarios
+          cuenten con herramientas que le ayuden a la toma de decisiones</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br> Los computadores deben cumplir
+          con la configuración y el software básico definido en línea base que se encuentra publicada en la Intranet.
+          Link.</p>
+        <p class="lineamientoDer"> • Garantizar el correcto funcionamiento de los equipos de cómputo <br> • Los usuarios
+          cuenten con herramientas que le ayuden a la toma de decisiones</p>
+      </div>
+
+    </div>
+
+    <!-- HARDWARE COMPUTADORES -->
+
+    <div id="navegadoresCom">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Navegadores</strong> <br><br> Los navegadores homologados
+          para las aplicaciones corporativas son: Internet Explorer 11, Chrome 44.</p>
+        <p class="lineamientoDer"> • Garantizar el correcto funcionamiento de las aplicaciones corporativas <br> •
+          Estandarizar el uso de navegadores en la compañía</p>
+      </div>
+
+
+    </div>
+
+    <!-- SEGURIDAD COMPUTADORES -->
+
+    <div id="seguridadCom">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Seguridad</strong> <br><br> Todos los computadores que se
+          encuentren conectados a la red de TQ deben tener instalados la última versión validada y probada del antivirus
+          Symantec endPoint.</p>
+        <p class="lineamientoDer"> • Prevenir, bloquear, detectar y eliminar ataques informáticos a los computadores e
+          información de la compañía</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Seguridad</strong> <br><br> El sistema de backup definido en
+          TQ para la protección de la información de los equipos de cómputo es Acronis.</p>
+        <p class="lineamientoDer"> • Garantizar el respaldo de la información contenida dentro de la carpeta documentos
+          corporativos <br> • Centralizar y monitorear el respaldo de la información a través de consolas
+          administrativas</p>
+      </div>
+
+    </div>
+
+    <!--  SISTEMAS OPERATIVOS COMPUTADORES -->
+
+    <div id="sistemasOperativosCom">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Sistemas Operativos</strong> <br><br> Todos los sistemas
+          operativos de los computadores de usuario final deben ser instalados con la última versión adquirida, se
+          deben certificar que los sistemas corporativos de TQ funcionen de manera correcta.</p>
+        <p class="lineamientoDer"> • Garantizar el licenciamiento en los computadores <br> • Mantener actualizado y
+          garantizar la seguridad de los dispositivos <br> • Contar con el soporte y conocimiento por parte de los
+          fabricantes <br> • Estandarizar el soporte y el conocimiento de los técnicos</p>
+      </div>
+
+    </div>
+
+    <!--  SUIT OFIMATICA COMPUTADORES -->
+
+    <div id="suitOfimaticaCom">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Suite de Ofimática</strong> <br><br> Todos los computadores
+          utilizaran la suite de ofimática Office 365 y sus aplicaciones de productividad.</p>
+        <p class="lineamientoDer"> • Estandarizar la herramienta de productividad <br> • Compatibilidad entre los
+          diferentes dispositivos <br> • Contar con el soporte y conocimiento de fabricante o terceros <br> • Apoyar el
+          procesamiento de la información para la toma de decisiones</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DESARROLLO -->
+
+  <div id="lineamientosDesarrollo">
+
+    <h4>Desarrollo</h4>
+
+    <!-- WEB DESARROLLO -->
+
+    <div id="webDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Web</strong> <br><br> Toda aplicación que requiera de una
+          capa de presentación (FRONTEND) deberá construirla con lenguajes o FrameWorks basados en JavaScript, HTML5 y
+          CSS.</p>
+        <p class="lineamientoDer">• Para adaptar las aplicaciones a las necesidades reales del usuario entregando la
+          mejor experiencia de usuario posible.</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Web</strong> <br><br> Toda aplicación que requiera de una
+          capa de reglas de negocio y validaciones (BACKEND) deben construirla con .Net Core.</p>
+        <p class="lineamientoDer">• Para estandarizar las tecnologías en pro de obtener una mejor capacidad de atención
+          del cambio continuo de las reglas de negocio de los diferentes sistemas</p>
+      </div>
+
+    </div>
+
+    <!-- CAPA MEDIA DESARROLLO -->
+
+    <div id="capaMediaDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Capa Media</strong> <br><br> Toda necesidad de intercambiar
+          información, en línea, entre sistemas de información deberá ser resuelta por medio del BUS de servicios (IBM
+          App Connect).</p>
+        <p class="lineamientoDer">• Para consolidar una arquitectura orientada a servicios que garantice la
+          independencia de los sistemas de información y la adecuada exposición de las funcionalidades de ellas</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Capa Media</strong> <br><br> Toda necesidad de intercambiar
+          información masivamente, de manera programada, o en Batch, entre sistemas de información deberá ser resuelta
+          por medio de las herramientas de ETL (IBM InfoSphere DataStage) o SQL Server Integration Services.</p>
+        <p class="lineamientoDer">• Para consolidar una arquitectura que garantice la independencia de los sistemas y el
+          adecuado traslado de su información</p>
+      </div>
+
+    </div>
+
+    <!-- PROCESAMIENTO DE DATOS DESARROLLO -->
+
+    <div id="proceDatosDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Procesamiento de Datos</strong> <br><br> Toda necesidad de
+          procesamiento de datos se debe resolver por medio de Python.</p>
+        <p class="lineamientoDer">• Para lograr la mayor eficiencia en la extracción de todos y su procesamiento,
+          tomando ventaja de las diferentes API's especializadas y de la capacidad innata del lenguaje</p>
+      </div>
+
+    </div>
+
+    <!-- VISUALIZACIÓN DE DATOS DESARROLLO -->
+
+    <div id="visualizacionDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Visualización</strong> <br><br>Toda necesidad de
+          visualización de información deberá ser construida por medio de las herramientas como MicroSoft Power BI,
+          Qlikview y MicroSoft Excel.</p>
+        <p class="lineamientoDer">• Para entregar información al usuario que sea más fácil de obtener, interpretar y
+          adoptar en su operación diaria</p>
+      </div>
+
+    </div>
+
+    <!-- FLUJO DE PROCESOS DE DATOS DESARROLLO -->
+
+    <div id="flujoProcesosDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Flujo de Procesos</strong> <br><br>Toda necesidad de flujos
+          de procesos deberá ser resuelta con la plataforma de automatización de procesos Bizagi.</p>
+        <p class="lineamientoDer">• Para entregar procesos automatizados que orquesten adecuadamente las interacciones
+          en las diferentes actividades y de los diferentes sistemas de información</p>
+      </div>
+
+    </div>
+
+    <!-- WEB API DESARROLLO -->
+
+    <div id="webApiDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">WEB API</strong> <br><br>Está permitido conectarse
+          directamente, mediante Web API's, a aplicaciones operativas como ARANDA y CRM.</p>
+        <p class="lineamientoDer">• Para facilitar la integración de los diferentes sistemas de información con
+          aplicaciones que tiene desarrollada una robusta interfaz de interacción.</p>
+      </div>
+
+    </div>
+
+    <!-- LIBERACIÓN DESARROLLO -->
+
+    <div id="liberacionDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Liberación</strong> <br><br>En las semanas de cierre no se
+          realizan liberaciones de software en los sistemas de información de la corporación; los casos excepcionales
+          debe ser aprobado por El Comité de Arquitectura.</p>
+        <p class="lineamientoDer">• Para garantizar la estabilidad de los sistemas de información en la semana de
+          cierre.</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Liberación</strong> <br><br>Todas las liberaciones de
+          Software tienen que entregar rutinas de liberación y diccionario de datos (Cuando aplique).</p>
+        <p class="lineamientoDer">• Para asegurar que se liberen los objetos correctos, completos y en el orden adecuado
+          y garantizar que los Sistemas de Información queden operando correctamente</p>
+      </div>
+
+    </div>
+
+    <!-- INTEGRACIONES DESARROLLO -->
+
+    <div id="integracionesDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Integraciones</strong> <br><br>Para la implementación de
+          DataStage con EDS's de .Net es necesario crear vistas y que el DataStage consuma de las vistas, ya que el EDS
+          por rendimiento hace uso de DROP-CREATE en las tablas (Esto elimina los privilegios de los usuarios de
+          Integración).</p>
+        <p class="lineamientoDer">• Para que el tiempo de respuesta del consumo del servicio sea en poco tiempo</p>
+      </div>
+
+    </div>
+
+    <!-- MOVILIDAD DESARROLLO -->
+
+    <div id="movilidadDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Movilidad</strong> <br><br>Toda necesidad que requiera
+          desarrollo para dispositivos móviles deberá ser construida en Angular o .Net Core para PWA.</p>
+        <p class="lineamientoDer">• Asegurar que las soluciones funcionen correctamente sobre los dispositivos
+          establecidos por la Corporación</p>
+      </div>
+
+    </div>
+
+    <!-- AUTOMATIZACIONES DESARROLLO -->
+
+    <div id="automatizacionesDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Automatizaciones</strong> <br><br>Toda necesidad de
+          automatizaciones que se requiera en la Corporación deberá resolverse por medio de Automation Anywhere.</p>
+        <p class="lineamientoDer">• Para entregar procesos automatizados que disminuyan el tiempo de operación manual de
+          los usuarios</p>
+      </div>
+
+    </div>
+
+    <!-- ANALÍTICA DESARROLLO -->
+
+    <div id="analiticaDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Analítica</strong> <br><br>Toda necesidad que requiera la
+          aplicación de Analítica deberá ser desarrollada con R y Python usando los IDE's Spyder, PyCharm y R Studio.
+        </p>
+        <p class="lineamientoDer">• Para brindar apoyo a los elementos de juicio a la toma de decisiones oportunas a la
+          corporación</p>
+      </div>
+
+    </div>
+
+    <!-- COGNITIVA DESARROLLO -->
+
+    <div id="cognitivaDesarrollo">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Cognitiva</strong> <br><br>Toda necesidad que requiera la
+          aplicación de algoritmos cognitivos deberá ser implementada por medio de IBM WATSON.</p>
+        <p class="lineamientoDer">• Para brindar apoyo a los elementos de juicio a la toma de decisiones oportunas a la
+          corporación</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--  INFRAESTRUCTURA -->
+
+  <div id="lineamientosInfraestructura">
+
+    <h4>Infraestructura</h4>
+
+    <!-- SOLUCIONES INFRAESTRUCTURA -->
+
+
+    <div id="solucionesInfra">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soluciones</strong> <br><br> <strong>Todas las soluciones de
+            software o hardware que se adquieren o reciben para administración de TI, deben recibirse con:</strong>
+          <br><br> • Toda la
+          documentación técnica del producto entregada por el fabricante o proveedor autorizado (Manual de instalación,
+          manual de configuración, diagrama físico, diagrama de componentes, etc) y cumplir con los requerimientos de
+          operación del producto. <br> • Un contrato de soporte y mantenimiento para el software y hardware que cubra la
+          necesidad del servicio <br> • Un plan de capacitaciones recomendadas y necesarias para el soporte de la
+          solución. <br> • un plan de recuperación ante desastres (DRP) del ambiente productivo. En caso que no exista,
+          debe darse prioridad a la creación del mismo por parte del dueño de la solución. <br> Un acuerdo de servicio
+          establecido y firmado.</p>
+        <p class="lineamientoDer">• Garantizar el soporte y operación de la solución. <br> • Garantizar la atención
+          adecuada y oportuna <br> • Garantizar la recuperación de la información y la continuidad de la operación en
+          los tiempos requeridos por la corporación</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soluciones</strong> <br><br>Todo el software instalado en
+          los servidores de TQ (On Premises o Nube) deben cumplir con las políticas de licenciamiento oficiales de los
+          dueños de los productos.</p>
+        <p class="lineamientoDer">• Cumplir con la ley de protección a los derechos de autor <br> • Garantizar el
+          funcionamiento correcto del producto <br> • Tener derecho a actualizaciones requeridas por el software <br> •
+          Recibir soporte del fabricante del producto</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soluciones</strong> <br><br>Todas las soluciones ofrecidas
+          por el área de TI siempre que el producto lo permita, debe priorizar el despliegue del servicio en la nube de
+          Microsoft Azure.</p>
+        <p class="lineamientoDer">• Contar con la escalabilidad de los recursos requeridos de manera ágil <br> •
+          Mantener la plataforma actualizada al ritmo de los fabricantes <br> • Poder acceder a la información de la
+          nube desde diferentes dispositivos y diferentes sitios <br> • La disponibilidad de la nube es de 99.98% lo que
+          implica 1.6 horas de interrupción al año <br> • Optimizar el costo de la solución <br> • Facilitar los
+          servicios de backups y garantizar los mismos
+          <br> • Reducir riesgos tecnológicos por obsolescencia <br> • Reducir costos de hardware <br> • Reducir el
+          sobredimensionamiento local en las capacidades</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soluciones</strong> <br><br>Todas las soluciones de software
+          deberán permanecer como mínimo en la penúltima versión estable del producto que esté publicado en el sitio
+          oficial del proveedor, con el último release certificado.</p>
+        <p class="lineamientoDer">• Garantizar el soporte por parte del fabricante <br> • Minimizar riesgos de seguridad
+          y pérdida de información <br> • Garantizar el desempeño de la solución</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soluciones</strong> <br><br>Todas las soluciones que
+          requieran procesar grandes volúmenes de datos en cortos periodos de tiempo, deben ser analizadas con prioridad
+          para su despliegue en los servicios de la nube de Azure.</p>
+        <p class="lineamientoDer">• Facilitar el crecimiento dinámico requerido <br> • Garantizar el procesamiento
+          oportuno de la información <br> • Eliminar la dependencia de la infraestructura física</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soluciones</strong> <br><br>Todas las soluciones ofrecidas
+          por el área de TI deben contar con ambientes para producción, desarrollo y pruebas.</p>
+        <p class="lineamientoDer">• Garantizar la operación de producción <br> • Garantizar las condiciones para los
+          equipos de soporte <br> • Garantizar la disponibilidad para los equipos de la demanda <br> • Independizar
+          ambientes de manera controlada <br> • Minimizar fallas en el ambiente de producción por liberaciones</p>
+      </div>
+
+    </div>
+
+    <!-- BASE DE DATOS INFRAESTRUCTURA -->
+    <div id="BaseDatosInfraestructura">
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Bases de datos</strong> <br><br>Para todas las soluciones
+          que requieran de una base de datos <strong>No-Relacional,</strong> se define que en la capa de BackEnd se
+          usará Cosmos DB y en la capa de Presentación se usará IndexedDB.</p>
+        <p class="lineamientoDer">• Permitir el manejo de grandes volúmenes de datos independiente de la
+          infraestructura, dado por la escalabilidad del producto. <br> • Garantizar un alto rendimiento, mínima
+          latencia, alta disponibilidad de la misma a nivel Backend y Presentación. <br> • Permitir una BD distribuida
+          en diferentes locaciones <br> • Garantizar el acceso a la información <br> • Permite manejo de patrones para
+          IoT y telemetría para requerimientos futuros de la compañía</p>
+      </div>
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Bases de datos</strong> <br><br>Para todas las soluciones
+          que requieran de una base de datos <strong>Relacional</strong> , se define que la prioridad será el motor de
+          base de datos Microsoft SQL Server.</p>
+        <p class="lineamientoDer">• Estandarizar las bases de datos corporativas <br> • Garantizar el desempeño de los
+          servicios Microsoft <br> • Homogenizar el conocimiento <br> • Permitir más agilidad para la prestación del
+          servicio</p>
+      </div>
+
+    </div>
+
+
+    <!-- SISTEMAS OPERATIVOS INFRAESTRUCTURA -->
+    <div id="sistemasOpInfraestructura">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Sistemas operativos</strong> <br><br>Se define que los
+          sistemas operativos estándar que se usarán en TQ son Windows Server y Linux Red Hat en sus últimas versiones y
+          release, por lo tanto, todas las soluciones de software que se ofrezcan por TI deben ser instaladas y
+          configuradas en estos.</p>
+        <p class="lineamientoDer">• Ofrecer las ventajas de los 2 sistemas operativos más usados en el mundo <br> •
+          Permitir mayor eficiencia en la respuesta ante eventos <br> • Poder ser proactivos al tener consolidados los
+          servicios <br> • Conseguir personal especializado más ágilmente para solución de necesidades <br> • Diseñar
+          con estándar en servicios reconocidos mundialmente</p>
+      </div>
+
+    </div>
+
+
+    <!-- VIRTUALIZACIÓN INFRAESTRUCTURA -->
+
+    <div id="virtualizacionInfra">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Virtualización</strong> <br><br>Se define que la plataforma
+          de virtualización oficial para uso on premise en TQ es VMWare, por lo tanto, todas las soluciones de software
+          que se ofrezcan por TI deben poder ser virtualizadas en esta.</p>
+        <p class="lineamientoDer">• Garantizar desempeño de las soluciones <br> • Optimización del uso de los recursos
+          de cómputo por balanceo de cargas de trabajo <br> • Minimizar tiempos recuperación de los servicios <br> •
+          Tener visibilidad del comportamiento en tiempo real de las soluciones <br> • Garantizar el licenciamiento de
+          los sistemas operativos <br> • Reducir la infraestructura física requerida <br> • Facilitar planes de
+          recuperación de la operación ante desastres</p>
+      </div>
+
+    </div>
+
+
+    <!-- RED INALÁMBRICA INFRAESTRUCTURA -->
+
+    <div id="redInalambricaInfra">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Red Inalámbrica</strong> <br><br>Para todas las sedes de TQ
+          se ofrecerá el servicio de red inalámbrica con cobertura en las oficinas y salas de productividad, aplicando
+          las mismas políticas de uso de la sede principal.</p>
+        <p class="lineamientoDer">• Facilitar el estándar de conectividad en las sedes <br> • Ofrecer un servicio
+          homogéneo en las sedes <br> • Ofrecer la cobertura requerida del personal administrativo <br> • Garantizar la
+          seguridad de la información con los mismos patrones en todas las sedes</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MULTIFUNCIONALES -->
+
+  <div id="lineamientosMultifuncionales">
+
+    <h4>Multifuncionales</h4>
+
+    <!-- HARDWARE MULTIFUNCIONALES -->
+
+    <div id="hardwareMultifuncionales">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br>Las multifuncionales que se
+          utilizan en TQ son marca HP.</p>
+        <p class="lineamientoDer">• Estandarizar el manejo de las marcas <br> • Gestión del conocimiento en los técnicos
+          de soporte</p>
+      </div>
+
+    </div>
+
+    <!-- SOPORTE MULTIFUNCIONALES -->
+
+    <div id="soporteMultifuncionales">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">soporte</strong> <br><br>El contrato de los dispositivos
+          multifuncionales se tiene con Carvajal Print.</p>
+        <p class="lineamientoDer">• Garantizar la continuidad de la operación <br> • Contar con un soporte especializado
+          en el hardware y el software</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">soporte</strong> <br><br>Los dispositivos multifuncionales
+          se tienen en modalidad de servicio y el contrato está a un plazo de 60 meses.</p>
+        <p class="lineamientoDer">• Garantizar la continuidad de la operación</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SEGURIDAD -->
+
+  <div id="lineamientosSeguridad">
+
+    <h4>Seguridad</h4>
+
+    <!-- ACCESOS SEGURIDAD -->
+
+    <div id="accesosSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Toda autenticación de usuarios
+          debe realizarse a través de los servicios de autenticación provistos por el equipo de desarrollo y
+          arquitectura de TQ.</p>
+        <p class="lineamientoDer">• Proteger las cuentas de acceso lógico <br> • Mantener la seguridad de la información
+        </p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Todo usuario del sistema debe ser
+          personal e intransferible.</p>
+        <p class="lineamientoDer">• Proteger las cuentas de acceso lógico <br> • Mantener la seguridad de la información
+        </p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Toda contraseña de cuenta de
+          usuario debe tener una longitud mínima de 8 caracteres, alfanumérica, con vencimiento de máximo 90 día y
+          cumplir con el procedimiento de Gestión de Accesos.</p>
+        <p class="lineamientoDer">• Proteger las cuentas de acceso lógico <br> • Mantener la seguridad de la información
+        </p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Toda contraseña de cuenta de
+          servicios que no deba expirar, debe tener una longitud mínima de 16 caracteres, alfanumérica, y tener un plan
+          de cambio periódico que no exceda 180 días.</p>
+        <p class="lineamientoDer">• Proteger las cuentas de acceso lógico de los servicios <br> • Mantener la seguridad
+          de la información</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Todos los sistemas o soluciones
+          deben usar el servicio de directorio activo para la autenticación de sus usuarios (Single Sign-On). Si un
+          sistema no puede conectarse con el Directorio Activo, la excepción debe ser autorizada por el comité de
+          Arquitectura y de todas formas el usuario debe ser creado con el mismo username del usuario de red.</p>
+        <p class="lineamientoDer">• Proteger el acceso a los servicios <br> • Tener gobierno de los accesos de usuario
+          <br> • Controlar el crecimiento de usuarios por sistemas</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Tiene que existir un procedimiento
+          que bloquee y elimine los usuarios de todas las personas que se retiran de la compañía.</p>
+        <p class="lineamientoDer">• Proteger las cuentas de acceso lógico <br> • Mantener la seguridad de la información
+        </p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>Toda contraseña que se almacene
+          debe permanecer encriptada.</p>
+        <p class="lineamientoDer">• Proteger las cuentas de acceso lógico <br> • Mantener la seguridad de la información
+        </p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Accesos</strong> <br><br>El acceso a los diferentes
+          ambientes (desarrollo, calidad o pruebas y producción) deben estar completamente segregados y los proveedores
+          y/o desarrolladores no deben tener acceso al ambiente de producción.</p>
+        <p class="lineamientoDer">• Garantizar la seguridad de las soluciones TQ <br> • Tener gobierno de las soluciones
+          publicadas <br> • Evitar cambios no autorizados</p>
+      </div>
+
+    </div>
+
+    <!-- ACTUALIZACIONES SEGURIDAD -->
+
+    <div id="actualizacionesSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Actualizaciones</strong> <br><br>Todo software que se
+          utilice en servidores, computadores y dispositivos debe contar con todos los parches críticos de seguridad
+          aplicados en un máximo de 30 días contados a partir de la liberación de la actualización por parte del
+          fabricante.</p>
+        <p class="lineamientoDer">• Prevenir infecciones de Malware <br> • Mantener la seguridad de la informacion</p>
+      </div>
+
+    </div>
+
+    <!-- BASES DE DATOS SEGURIDAD -->
+
+    <div id="basesDatosSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Bases de datos</strong> <br><br>Toda modificación de base de
+          datos en producción debe cumplir con el procedimiento de modificación de base de datos.</p>
+        <p class="lineamientoDer">• Mantener la integridad y disponibilidad de la información</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Bases de datos</strong> <br><br>Ningún recurso de
+          almacenamiento puede estar expuesto a internet. Solo debe aceptar conexiones desde servidores de aplicación o
+          Ips autorizadas.</p>
+        <p class="lineamientoDer">• Proteger la información de las bases de datos</p>
+      </div>
+
+    </div>
+
+    <!-- CONEXIÓN SEGURIDAD -->
+
+    <div id="conexionesSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Conexiones</strong> <br><br>No se permite exponer servicios
+          de RDP a internet.</p>
+        <p class="lineamientoDer">• Prevenir infecciones de Malware <br> • Mantener la seguridad de la información
+        </p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Conexiones</strong> <br><br>Todas las conexiones deben ser
+          HTTPS Only.</p>
+        <p class="lineamientoDer">• Evitar la interceptación de la información </p>
+      </div>
+
+    </div>
+
+    <!-- CORREO SEGURIDAD -->
+
+    <div id="correoSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Correo</strong> <br><br>El sistema de protección de correo
+          definido en TQ para la protección de los mismos es Symantec Cloud Email.</p>
+        <p class="lineamientoDer">• Minimizar las amenazas de ataques cibernéticos <br> • Filtrar correos basura
+          entrantes a la corporación <br> • Proteger la información corporativa</p>
+      </div>
+
+    </div>
+
+    <!-- DATOS PERSONALES SEGURIDAD -->
+
+    <div id="datosPersonalesSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Datos personales</strong> <br><br>Reportar los
+          requerimientos de captura y tratamiento de datos personales a la oficial de cumplimiento.</p>
+        <p class="lineamientoDer">• Cumplir con normativas legales <br> • Cumplir con políticas corporativas de datos
+          personales</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Datos personales</strong> <br><br>Integrar todas las
+          soluciones nuevas que involucren captura o tratamiento de datos personales con el sistema de gestión de
+          autorización de datos personales.</p>
+        <p class="lineamientoDer">• Cumplir con normativas legales <br> • Cumplir con políticas corporativas de datos
+          personales</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Datos personales</strong> <br><br>No almacenar datos
+          personales o sensibles en dispositivos móviles, computadores o servidores web. Si es estrictamente necesario,
+          se debe hacer un análisis de riesgo, minimizar los tiempos de retención y aplicar controles como encripción,
+          mdm, endpoint protección y monitoreo.</p>
+        <p class="lineamientoDer">• Cumplir con normativas legales <br> • Cumplir con políticas corporativas de datos
+          personales</p>
+      </div>
+
+    </div>
+
+    <!-- DISPOSITIVOS SEGURIDAD -->
+
+    <div id="dispositivosSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Dispositivos</strong> <br><br>El sistema de antivirus
+          definido en TQ para la protección de la plataforma de servidores es Symantec Endpoint Protection.</p>
+        <p class="lineamientoDer">• Garantizar la protección con uno de los líderes mundiales de estos sistemas <br> •
+          Ser proactivos en la protección de amenazas <br> • Estandarizar en la protección de los servicios</p>
+      </div>
+
+    </div>
+
+    <!-- DRP SEGURIDAD -->
+
+    <div id="drpSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">DRP</strong> <br><br>El sistema de backup definido en TQ
+          para la protección de la plataforma de servidores es Backup Exec.</p>
+        <p class="lineamientoDer">• Optimizar los tiempos de copia de backup eliminando duplicación de datos <br> •
+          Almacenar menos datos con la eliminación de duplicados y archivado integrado <br> • Consolidar el soporte de
+          backup con visibilidad de todo el servicio <br> • Integrar en una herramienta todos los backups necesarios
+          para la infraestructura de servidores <br> • Validación de los backups en línea para garantizar su integridad
+          <br> • Integrar las funcionalidades de backups locales con las opciones de nube</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">DRP</strong> <br><br>La documentación del Plan de
+          Recuperación ante desastres se debe mantener actualizada.</p>
+        <p class="lineamientoDer">• Cumplir con normativas legales <br> • Cumplir con auditorías internas y externas</p>
+      </div>
+
+    </div>
+
+    <!-- EOL SEGURIDAD -->
+
+    <div id="eolSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">EOL</strong> <br><br>No se permite utilizar sistemas
+          operativos o aplicaciones cuya fecha de fin de soporte (EOL, por sus siglas en inglés) este en los próximos
+          cinco años.</p>
+        <p class="lineamientoDer">• Evitar la obsolescencia <br> • Prevenir utilizar sistemas vulnerables <br> •
+          Asegurar
+          la información y la operación</p>
+      </div>
+
+    </div>
+
+    <!-- PERIMETRAL SEGURIDAD -->
+
+    <div id="perimetralSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Perimetral</strong> <br><br>Todas las sedes de TQ deben
+          contar con un sistema de seguridad de la información (Firewall).</p>
+        <p class="lineamientoDer">• Proteger las soluciones ante intentos de intrusión <br> • Minimizar la pérdida de
+          información de las soluciones</p>
+      </div>
+
+    </div>
+
+    <!-- SOPORTE REMOTO SEGURIDAD -->
+
+    <div id="soporteRemotoSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Soporte remoto</strong> <br><br>La herramienta que se
+          utiliza para el soporte remoto de los equipos debe contar con la aceptación del usuario como precondición para
+          la conexión, clave compleja de acceso, accesos personales e intransferibles para los técnicos y monitoreo y
+          registro de las conexiones.</p>
+        <p class="lineamientoDer">• Proteger la información de los dispositivos <br> • Prevenir el acceso no autorizado
+          <br> • Asegurar el proceso de soporte remoto</p>
+      </div>
+
+    </div>
+
+    <!-- TRANSACCIONALES SEGURIDAD -->
+
+    <div id="transaccionalesSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Transaccionales</strong> <br><br>El diseño del sistema debe
+          tener en cuenta mecanismos que aseguren el registro histórico para poder mantener la trazabilidad de las
+          acciones realizadas por los usuarios en el último año.</p>
+        <p class="lineamientoDer">• Cumplir con normativas legales <br> • Cumplir con auditorías internas y externas
+          <br> • Mantener la seguridad de la información</p>
+      </div>
+
+    </div>
+
+    <!-- VERSIONAMIENTO SEGURIDAD -->
+
+    <div id="versionamientoSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Versionamiento</strong> <br><br>No se deben realizar cambios
+          al ambiente de producción sin pasar por los otros dos ambientes ni por el procedimiento de control de
+          versiones respectivo con su debido registro como cambio en la herramienta de la mesa de ayuda.</p>
+        <p class="lineamientoDer">• Garantizar la seguridad de las soluciones TQ <br> • Tener gobierno de las soluciones
+          publicadas <br> • Evitar cambios no autorizados</p>
+      </div>
+
+    </div>
+
+    <!-- WEB SEGURIDAD -->
+
+    <div id="webSeguridad">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">WEB</strong> <br><br>Todas las soluciones TQ que deban ser
+          publicadas a internet, deben hacerse a través de un sistema certificado para este fin como lo es el sistema
+          WAF (en TQ On Premise se tiene Fortiweb).</p>
+        <p class="lineamientoDer">• Garantizar la seguridad de las soluciones TQ <br> • Minimizar el alcance de los
+          ataques que nos realicen <br> • Tener gobierno de las soluciones publicadas <br> • Poder atender rápidamente
+          las recomendaciones de protección generadas por los especialistas</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">WEB</strong> <br><br>Toda solución de E commerce que se
+          implemente debe estar acompañada de pruebas no funcionales de seguridad.</p>
+        <p class="lineamientoDer">• Proteger la información financiera de los usuarios <br> • Mantener la seguridad de
+          las soluciones de e commerce</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- VIDEO PROYECCIÓN -->
+
+  <div id="lineamientosVideoProyeccion">
+
+    <h4>Video Proyección</h4>
+
+    <!-- HARDWARE VIDEO PROYECCIÓN -->
+
+    <div id="hardwareVideoProyeccion">
+
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br>Los dispositivos de proyección que
+          se manejan en TQ son Hitachi y Panasonic.</p>
+        <p class="lineamientoDer">• Garantizar el cumplimiento de los requerimientos mínimos de funcionamiento de las
+          salas de productividad <br> • Estandarizar el manejo de las marcas <br> • Gestión del conocimiento en los
+          técnicos de soporte</p>
+      </div>
+      <div class="lineamientoCont">
+        <p class="lineamientoIzq"> <strong class="etiqueta">Hardware</strong> <br><br>Todos los dispositivos de
+          proyección se contratan en modalidad de servicio con mantenimiento preventivo, correctivo y cambio de partes
+          incluido.</p>
+        <p class="lineamientoDer">• Garantizar el correcto funcionamiento de los dispositivos <br> • Contar con soporte
+          especializado directo con los fabricantes <br> • Cubrimiento de las necesidades de nuevas configuraciones o
+          espacios
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="Interaccion.js"></script>
+
+</body>
+
+</html>
